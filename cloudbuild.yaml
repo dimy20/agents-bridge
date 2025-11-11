@@ -1,3 +1,7 @@
+serviceAccount: 85016667759-compute@developer.gserviceaccount.com
+options:
+  logging: CLOUD_LOGGING_ONLY
+
 steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'southamerica-west1-docker.pkg.dev/${PROJECT_ID}/images/agents-bridge', '.']
